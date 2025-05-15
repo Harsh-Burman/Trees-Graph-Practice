@@ -23,8 +23,7 @@ void Treecreate()
         scanf("%d", &x);
         if (x != -1)
         {
-            t = (struct Node *)malloc(sizeof(struct
-                                             Node));
+            t = (struct Node *)malloc(sizeof(struct Node));
             t->data = x;
             t->lchild = t->rchild = NULL;
             p->lchild = t;
@@ -34,8 +33,7 @@ void Treecreate()
         scanf("%d", &x);
         if (x != -1)
         {
-            t = (struct Node *)malloc(sizeof(struct
-                                             Node));
+            t = (struct Node *)malloc(sizeof(struct Node));
             t->data = x;
             t->lchild = t->rchild = NULL;
             p->rchild = t;
@@ -76,6 +74,5 @@ int main()
     Preorder(root);
     printf("\nPost Order ");
     Postorder(root);
-
     return 0;
 }
